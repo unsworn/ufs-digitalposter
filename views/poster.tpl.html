@@ -1,0 +1,15 @@
+<div class="top-fixed">
+  <div class="back"><a href="/"><img src="ui/back.png">MENU</a></div>
+  <div class="title">TITLE</div>
+  <div class="lang-group">
+    <a class="swe selected">SVENSKA</a>
+    <a class="en">ENGLISH</a>
+  </div>
+</div>
+
+<div class="poster-view" ng-controller="PosterCtrl as posterCtrl">
+  <section class="{{entry.SectionClass}}" style="background-image: url(images/{{entry.BackgroundImage}}); background-color: {{entry.BackgroundColor}};" ng-repeat="entry in posterCtrl.entries">
+    <div class="{{entry.ImageClass}}" style="background-image: url(images/{{entry.Image}})"></div> 
+    <p style="background-color: {{entry.TextBackground}}">{{entry.SectionSwedish}}</p>
+  </section>
+</div>
